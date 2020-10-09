@@ -1,0 +1,3 @@
+mkdir -p /home/runner/.apt/usr/bin
+cp bin/* /home/runner/.apt/usr/bin
+chmod +x hello.java
