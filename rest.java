@@ -10,7 +10,7 @@ import javax.enterprise.context.ApplicationScoped;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 
-@Path("/hello")
+@Path("/")
 @ApplicationScoped
 public class rest {
 
