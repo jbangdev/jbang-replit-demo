@@ -2,3 +2,5 @@ curl -Ls https://sh.jbang.dev | bash -s - app setup
 mkdir -p /home/runner/.apt/usr/bin
 cp ~/.jbang/bin/* /home/runner/.apt/usr/bin
 chmod +x hello.java
+chmod +x rest.java
+
