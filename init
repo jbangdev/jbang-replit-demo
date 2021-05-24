@@ -1,6 +1,11 @@
-curl -Ls https://sh.jbang.dev | bash -s - app setup
-mkdir -p /home/runner/.apt/usr/bin
-cp ~/.jbang/bin/* /home/runner/.apt/usr/bin
+if [ ! -f /home/runner/.apt/usr/bin/jbang ]; then
+    echo Installing missing jbang
+    curl -Ls https://sh.jbang.dev | bash -s - app setup
+    mkdir -p /home/runner/.apt/usr/bin
+    cp ~/.jbang/bin/* /home/runner/.apt/usr/bin
+    echo "File not found!"
+    exit 0
+fi
 chmod +x hello.java
 chmod +x rest.java
 

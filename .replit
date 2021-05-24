@@ -1,2 +1,2 @@
-run = "./hello.java"
+run = "sh ./init; ./hello.java"
 onBoot = "sh ./init"
